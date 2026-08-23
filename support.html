@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — YET</title><style>
+/* YET — DESIGN_SPEC §2 tokens. Dark only, same as the app. */
+:root {
+  --ink: #0B0B0D; --surface: #16161A; --surface-2: #1E1E24; --border: #2A2A32;
+  --acid: #CCFF00; --heat: #FF2D55; --text: #F5F5F7; --muted: #8A8A93;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ink); color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 96px; }
+.brand { font-size: 32px; font-weight: 900; letter-spacing: -0.03em; text-decoration: none; color: var(--text); }
+.brand span { color: var(--acid); }
+.tag { color: var(--muted); font-size: 14px; margin: 6px 0 40px; }
+h1 { font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 8px; }
+h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin: 40px 0 12px; }
+p, li { color: #D6D6DA; }
+a { color: var(--acid); }
+.meta { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 20px; margin: 20px 0;
+}
+.card.acid { border-color: var(--acid); }
+.label {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 8px;
+}
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; font-size: 14px; }
+.todo { color: var(--heat); font-weight: 600; }
+footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+footer a { margin-right: 16px; }
+</style>
+</head><body><div class="wrap">
+  <a class="brand" href="./">YET<span>.</span></a>
+  <p class="tag">You're not there yet.</p>
+
+  <h1>Support</h1>
+  <p class="meta">Both app stores require a support URL. This is it.</p>
+
+  <div class="card">
+    <span class="label">Contact</span>
+    <p style="margin:0">Email <span class="todo">[YOUR CONTACT EMAIL]</span>. Include your device
+      and OS version if something is broken.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <h2 style="font-size:17px">The notifications stopped</h2>
+  <p>Two likely reasons. Either notification permission was turned off — Settings in the app will
+    say so and link you to the system settings to fix it. Or YET backed off on its own: if you
+    stop opening the notifications, the app reduces how often it sends them, and after three
+    silent days it pauses for 48 hours. That is deliberate.</p>
+
+  <h2 style="font-size:17px">I want them to stop completely</h2>
+  <p>Settings → "This isn't helping me". One tap, everything off, no questions asked and no
+    retention offers. You can turn them back on in the same place.</p>
+
+  <h2 style="font-size:17px">How do I get my data out?</h2>
+  <p>Settings → Export weigh-ins (CSV), which opens the normal share sheet. The file has one row
+    per weigh-in with the date, weight, change since start, and distance to goal.</p>
+
+  <h2 style="font-size:17px">I restored a purchase and it did not unlock</h2>
+  <p>Settings → Restore purchases, and make sure you are signed into the same App Store or Google
+    Play account you bought with. If it still does not unlock, email us.</p>
+
+  <h2 style="font-size:17px">Will my data move to a new phone?</h2>
+  <p>No. Your weigh-ins and photos are stored only on your device and there is no account to sync
+    them with. Export to CSV first if you want to keep the history. Your subscription does carry
+    over — restore purchases on the new device.</p>
+
+  <h2>If this app is not helping you</h2>
+  <p>YET is deliberately blunt, but it is not for everyone and it is not medical advice. If
+    tracking your weight is making things worse rather than better, turn it off and talk to
+    someone qualified.</p>
+
+  <footer>
+    <a href="./">Home</a><a href="privacy.html">Privacy</a>
+  </footer>
+</div></body></html>
