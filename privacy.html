@@ -44,15 +44,16 @@ footer a { margin-right: 16px; }
   <p class="tag">You're not there yet.</p>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 29 August 2026 · Applies to the YET mobile app for iOS and Android.</p>
+  <p class="meta">Last updated: 3 October 2026 · Applies to the YET mobile app for iOS and Android.</p>
 
   <div class="card acid">
     <span class="label">The short version</span>
     <p style="margin:0">Everything you put into YET — your weight, your photos, your goal —
       is stored <strong>only on your phone</strong>. There is no account, no sign-in, and no
-      server that receives your history. The single exception is purchase information, which
-      goes to our payments provider so your subscription works. That is the whole policy; the
-      rest is detail.</p>
+      server that receives your history. Two things do leave the phone: purchase information,
+      which goes to our payments provider so your subscription works, and — in the free version
+      only — the device and ad data Google's ad service uses to show ads. Neither ever receives
+      your weight, your photos or your goal. That is the whole policy; the rest is detail.</p>
   </div>
 
   <h2>Who is responsible</h2>
@@ -66,8 +67,9 @@ footer a { margin-right: 16px; }
     <tr><td>Weigh-in history</td><td>Your device only</td><td>The chart and your history list</td></tr>
     <tr><td>Before and progress photos</td><td>Your device only, inside the app's private storage</td><td>Shown to you in the app and attached to your notifications</td></tr>
     <tr><td>Settings — intensity, quiet hours, custom lines</td><td>Your device only</td><td>To schedule notifications the way you asked</td></tr>
-    <tr><td>Which notifications were scheduled, delivered and opened</td><td>Your device only</td><td>So the app can back off automatically if you stop opening them</td></tr>
+    <tr><td>Which notifications were scheduled, delivered and opened</td><td>Your device only</td><td>So a follow-up reminder is cancelled once you open one</td></tr>
     <tr><td>Subscription status</td><td>Your device, and our payments provider</td><td>So paid features work, and so you can restore a purchase</td></tr>
+    <tr><td>When a 24-hour Pro pass ends; how many full-screen ads you have seen today</td><td>Your device only</td><td>So a pass you earned works, and so ads stay within their limits</td></tr>
   </table>
   <p>YET has no user accounts. Nothing ties this data to your name, email or phone number,
     because the app never asks for any of them.</p>
@@ -80,7 +82,7 @@ footer a { margin-right: 16px; }
   <p>YET does not connect to Apple Health or Google Fit, and does not read any health data from
     your phone.</p>
 
-  <h2>The one thing that is sent off your device</h2>
+  <h2>What is sent off your device: purchases</h2>
   <p>Purchases are handled by <strong>RevenueCat, Inc.</strong>, which works with the Apple App
     Store and Google Play to manage subscriptions. When you buy or restore a subscription,
     RevenueCat receives a store-issued purchase identifier and an anonymous app-generated user
@@ -91,10 +93,25 @@ footer a { margin-right: 16px; }
   <p>Apple and Google process the payment itself under their own policies. We never see your
     card details.</p>
 
-  <h2>Advertising and analytics</h2>
-  <p>YET contains <strong>no advertising and no analytics</strong>. There is no tracking SDK, no
-    advertising identifier use, no crash reporting service and no third-party analytics. We do
-    not build a profile of you and there is nothing to opt out of.</p>
+  <h2>What is sent off your device: advertising (free version)</h2>
+  <p>The free version shows ads served by <strong>Google AdMob</strong> (Google LLC; Google
+    Ireland Limited for users in the EEA and Switzerland). Pro shows no ads. To choose, cap and
+    measure ads, Google's ad SDK collects:</p>
+  <table>
+    <tr><th>Data</th><th>Notes</th></tr>
+    <tr><td>Device advertising identifier</td><td>On iOS, only if you allow tracking when Apple asks. On Android, the advertising ID, which you can reset or delete in system settings.</td></tr>
+    <tr><td>IP address, and an approximate location derived from it</td><td>Not precise location — YET never asks for location permission.</td></tr>
+    <tr><td>Ad interactions and diagnostics</td><td>Which ads were shown or tapped, and basic device and app information.</td></tr>
+  </table>
+  <p>Google does <strong>not</strong> receive your weight, your photos, your goal or your
+    notification history: YET never passes any of it to the ad SDK. If you are in the EEA, the UK
+    or Switzerland, YET shows Google's consent form before personalised ads, and Settings → Ad
+    privacy choices lets you change your answer later. How Google uses this data:
+    <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses
+    information from apps that use its services</a> and
+    <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</p>
+  <p>There is still no analytics or crash-reporting service of our own, and we do not build a
+    profile of you.</p>
 
   <h2>Permissions the app asks for</h2>
   <table>
@@ -102,6 +119,7 @@ footer a { margin-right: 16px; }
     <tr><td>Notifications</td><td>The core of the app: scheduled reminders showing your before photo. Decline and the app still works, but does almost nothing.</td></tr>
     <tr><td>Camera</td><td>Only if you choose to take a before or progress photo.</td></tr>
     <tr><td>Photo library</td><td>Only if you choose to pick an existing photo. YET reads the single image you select; it does not browse or index your library.</td></tr>
+    <tr><td>Tracking (iOS)</td><td>Only to make the ads in the free version more relevant. Saying no changes nothing else in the app.</td></tr>
   </table>
   <p>All notification scheduling happens on your device. No notification is sent from a server,
     and the app works fully offline.</p>
@@ -115,6 +133,7 @@ footer a { margin-right: 16px; }
     <tr><td>Export it</td><td>Settings → Export weigh-ins (CSV). Yours to keep, in a standard format.</td></tr>
     <tr><td>Delete it</td><td>Settings → Delete all my data. This erases weigh-ins, photos and settings from the device immediately and cannot be undone. Deleting the app also removes everything.</td></tr>
     <tr><td>Stop the notifications</td><td>Settings → "This isn't helping me" turns every notification off in one tap, with no questions and no offers.</td></tr>
+    <tr><td>Limit ad tracking</td><td>iOS: system Settings → Privacy &amp; Security → Tracking. Android: system Settings → Google → Ads, to reset or delete the advertising ID. EEA, UK and Switzerland: in YET, Settings → Ad privacy choices.</td></tr>
   </table>
   <p>For subscription data held by RevenueCat, or for any question about this policy, contact us
     at <a href="mailto:taron.alaverdyan.97@gmail.com">taron.alaverdyan.97@gmail.com</a>. If you are in the EU or UK you also have
@@ -123,7 +142,8 @@ footer a { margin-right: 16px; }
   <h2>Data retention</h2>
   <p>Your data stays on your device until you delete it or uninstall the app. We hold no copy,
     so there is nothing for us to retain or delete on your behalf. Purchase records are kept by
-    RevenueCat and the app stores for as long as their own policies and tax obligations require.</p>
+    RevenueCat and the app stores for as long as their own policies and tax obligations require.
+    Ad data is retained by Google under its own policy.</p>
 
   <h2>Children</h2>
   <p>YET is not intended for children. It is designed for adults setting their own weight goals,
